@@ -1,0 +1,23 @@
+.title {
+    max-width: 700px;
+  text-align: center;
+  color: #e0952f;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px auto;
+  padding: 30px ;
+}
+
+.title h2 {
+  font-size: 22px;
+  color: rgb(133, 74, 74);
+  margin-top: 20px;
+  text-transform: none;
+}
+
+@media (max-width: 778px) {
+  .title h2 {
+    font-size: 16px;
+  }
+}

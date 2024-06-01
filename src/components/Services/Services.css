@@ -1,0 +1,190 @@
+.services-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; /* Image on left, text on right */
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.service .services-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+}
+
+.service-details {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.service-details h3 {
+  font-size: 22px;
+  padding: 12px 0;
+  color: #e0952f;
+}
+
+.service-details p {
+  max-width: 600px;
+  font-size: 18px;
+  padding-left: 10px;
+  line-height: 1.5;
+  color: rgba(61, 29, 29, 0.733);
+}
+.service-details ul {
+  padding: 10px 0 0 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  /* max-width: 600px; */
+  color: rgba(61, 29, 29, 0.733);
+}
+
+.service-details .btn-div {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.service-details .btn-div button {
+  border: none;
+  background-color: #e0952f;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-details .btn-div button img {
+  width: 30px;
+  margin-left: 20px;
+  transition: all 0.1s;
+}
+
+.service-details .btn-div button:hover {
+  transform: translateX(10px);
+  background-color: #a86f20;
+}
+.reverse {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.whatsapp-btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .service-details ul {
+    font-size: 14px;
+  }
+  .service-details .btn-div {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .services {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .service-details {
+    margin-top: 8px;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  .service .services-img {
+    display: none;
+    width: 100%;
+    height: 200px;
+    border-radius: 10%;
+  }
+
+  .service-details p {
+    max-width: 500px;
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 1.5;
+    line-height: 1.5;
+    color: rgba(61, 29, 29, 0.733);
+  }
+  .service {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Align text to the left */
+    gap: 10px; /* Reduce spacing on smaller screens */
+  }
+
+  .service-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reverse {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px; /* Reduce spacing on smaller screens */
+  }
+  .service .services-img {
+    display: none;
+  }
+  .service-details .btn-div button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .service-details .btn-div {
+    display: flex;
+    justify-content: center;
+  }
+  .service-details h3 {
+    font-size: 24px;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
