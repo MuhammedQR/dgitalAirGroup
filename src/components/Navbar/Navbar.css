@@ -26,12 +26,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-  color: #e0952f;
+  color: #ffffffb9;
   cursor: pointer;
 }
 
 .nav-dark {
-  background-color: #212ea0;
+  background-color: #e0952f;
   transition: all 0.5s;
 }
 
@@ -60,7 +60,7 @@ nav ul li:hover {
     top: 0;
     right: 0;
     bottom: 0;
-    background: #212ea0;
+    background: #e0952f;
     z-index: -1;
     width: 200px;
     padding-top: 70px;
@@ -69,7 +69,7 @@ nav ul li:hover {
   nav ul li {
     display: block;
     margin: 25px 40px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .menu-icon {
