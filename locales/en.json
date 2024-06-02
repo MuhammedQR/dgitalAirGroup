@@ -1,0 +1,92 @@
+{
+    "Home": "Home",
+    "Our Services": "Our Services",
+    "Our Achievements": "Our Achievements",
+    "About us": "About us",
+    "Testimonials": "Testimonials",
+    "Contact us": "Contact us",
+
+    
+    "Hero_Title": "DIGITAL AIR CONDITION",
+    "Hero_Subtitle": "MAINTENANCE OF AC",
+    "Hero_Description": "Enjoy comfort and refreshment with one of the best air conditioning companies in the United Arab Emirates",
+    "Explore_More": "Explore more",
+
+
+    
+    "Services_Title": "Our Services", 
+
+    "Service_1_Title": "Air Conditioning Services",
+    "Service_1_Description": "Complete AC solutions for UAE homes & businesses. Installation, maintenance & more for optimal comfort!",
+    "Service_1_List_1": "Split cooling / heat pump systems",
+    "Service_1_List_2": "VRF inc. gas fired installations",
+    "Service_1_List_3": "Chiller replacement",
+    "Service_1_List_4": "Domestic cooling solutions",
+    "Service_1_List_5": "Server farm close control cooling",
+
+    "Service_2_Title": "Design Services",
+    "Service_2_Description": "We harness advanced technologies to enable our engineers to provide professional services that include:",
+    "Service_2_List_1": "Feasibility studies",
+    "Service_2_List_2": "Energy audits",
+    "Service_2_List_3": "Detailed engineering designs",
+    "Service_2_List_4": "Engineering design review",
+    "Service_2_List_5": "System component design and construction",
+
+    "Service_3_Title": "Mechanical Services",
+    "Service_3_Description": "Complete AC solutions: Installation, maintenance, repair & energy-efficient programming.",
+    "Service_3_List_1": "Clean and maintain AC components",
+    "Service_3_List_2": "Troubleshoot and fix AC issues",
+    "Service_3_List_3": "Adjust and program AC",
+    "Service_3_List_4": "Assess AC efficiency",
+    "Service_3_List_5": "Repair AC components",
+
+    "Service_4_Title": "Project Management",
+    "Service_4_Description": "Delivering AC projects on time and within budget with expert project managers and a skilled support team of tradespeople.",
+    "Service_4_List_1": "On-Time and Budget-Friendly Delivery",
+    "Service_4_List_2": "Expert Project Management",
+    "Service_4_List_3": "Skilled Tradespeople Support Team",
+    "Service_4_List_4": "Streamlined AC Project Execution",
+    "Service_4_List_5": "Guaranteed Client Satisfaction",
+
+    "Service_Request": "Service Request",  
+    "WhatsApp_Click": "Click here to chat on WhatsApp" ,
+    
+    
+
+        "residentialProjects": "Residential Projects",
+        "publicProjects": "Public Projects",
+        "governmentProjects": "Government Projects",
+
+
+
+
+        
+            "aboutUsTitle": "About Us",
+            "aboutUsSubTitle":"Digital Air Conditioning: Your Reliable Partner for Air Conditioning Solutions",
+            "companyDescription": "Founded in the early 2004s, Digital Air Condition has established itself as a leader in the building services industry. We combine a highly skilled workforce with a commitment to cutting-edge engineering practices to deliver exceptional service to a diverse clientele.",
+            "serviceExpertise": "Our team's expertise spans all aspects of air conditioning systems, from single split units in domestic settings to complex close-control systems and large-scale chiller installations for entire office buildings.",
+            "technologyIntegration": "We leverage the latest technology throughout the design, estimation, costing, and communication phases, ensuring a swift and professional response to all inquiries, regardless of project size.",
+            "innovationCommitment": "Digital Air Condition is at the forefront of building management system advancements. We integrate these innovative solutions into our designs, resulting in cost-effective implementations that benefit our clients.",
+            "trainingInvestment": "To maintain our team's exceptional skillset, we actively invest in ongoing engineering and health & safety training for all personnel.",
+          
+
+                "contactUsTitle": "Send us a message",
+                "contactUsDescription": "Contact us today for a free consultation. Our expert team is happy to assist you and answer all your questions.",
+                "emailAddress": "info@digitalgroup.com",
+                "phoneNumberLandline": "02-6227176",
+                "phoneNumberMobile": "050-8003356",
+                "faxNumber": "02-555-8229",
+                "addressLine1": "Mazyad mall , tower 2 , 7th floor",
+                "addressLine2": "Muhamad Bin Zayd, ABU DHABI",
+                "addressLine3": "United Arab Emirates",
+                "yourNamePlaceholder": "Enter your name",
+                "phoneNumberPlaceholder": "Enter your mobile number",
+                "writeYourMessagePlaceholder": "Enter your Message",
+                "submitButtonLabel": "Submit Now",
+                "formSubmissionResult": "Form Submitted Successfully",  
+                "formSubmissionsetResult": "Sending...."  
+    
+              
+          
+      
+    }

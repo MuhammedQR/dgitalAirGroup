@@ -6,52 +6,54 @@ import serviceImgeThree from "../../assets/MechanicalService.jpeg";
 import serviceImgeFour from "../../assets/ProjectService.jpg";
 import whatsapp_icon from "../../assets/icons8-whatsapp-94.png";
 import arrow_white_icon from "../../assets/icons8-arrow-24.png";
-
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 const Services = () => {
+  const { t } = useTranslation();
   const serviceData = [
     {
-      title: "Air Conditioning Services",
+      title: t("Service_1_Title"),
       image: serviceImgeOne,
-      description:
-        "Complete AC solutions for UAE homes & businesses. Installation, maintenance & more for optimal comfort!",
-      listOne: "Split cooling / heat pump systems",
-      listTwo: "VRF inc. gas fired installations",
-      listThree: "Chiller replacement",
-      listFour: "Domestic cooling solutions",
-      listFive: "Server farm close control cooling",
+      description: t("Service_1_Description"),
+      listOne: t("Service_1_List_1"),
+      listTwo: t("Service_1_List_2"),
+      listThree: t("Service_1_List_3"),
+      listFour: t("Service_1_List_4"),
+      listFive: t("Service_1_List_5"),
+      button: t("Service_Request"),
     },
     {
-      title: "Design Services",
+      title: t("Service_2_Title"),
       image: serviceImgeTwo,
-      description:
-        "We harness advanced technologies to enable our engineers to provide professional services that include:",
-      listOne: "Feasibility studies",
-      listTwo: "Energy audits",
-      listThree: "Detailed engineering designs",
-      listFour: "engineering design review",
-      listFive: "system component design and construction",
+      description: t("Service_2_Description"),
+      listOne: t("Service_2_List_1"),
+      listTwo: t("Service_2_List_2"),
+      listThree: t("Service_2_List_3"),
+      listFour: t("Service_2_List_4"),
+      listFive: t("Service_2_List_5"),
+      button: t("Service_Request"),
     },
     {
-      title: "Mechanical Services",
+      title: t("Service_3_Title"),
       image: serviceImgeThree,
-      description:
-        "Complete AC solutions: Installation, maintenance, repair & energy-efficient programming.",
-      listOne: "Clean and maintain AC components ",
-      listTwo: "Troubleshoot and fix AC issues ",
-      listThree: "Adjust and program AC ",
-      listFour: "Assess AC efficiency",
-      listFive: "Repair AC components",
+      description: t("Service_3_Description"),
+      listOne: t("Service_3_List_1"),
+      listTwo: t("Service_3_List_2"),
+      listThree: t("Service_3_List_3"),
+      listFour: t("Service_3_List_4"),
+      listFive: t("Service_3_List_5"),
+      button: t("Service_Request"),
     },
     {
-      title: "Project Management",
+      title: t("Service_4_Title"),
       image: serviceImgeFour,
-      description:
-        "Delivering AC projects on time and within budget with expert project managers and a skilled support team of tradespeople.",
-      listOne: "On-Time and Budget-Friendly Delivery",
-      listTwo: "Expert Project Management",
-      listThree: "Skilled Tradespeople Support Team",
-      listFour: "Streamlined AC Project Execution",
-      listFive: "Guaranteed Client Satisfaction",
+      description: t("Service_4_Description"),
+      listOne: t("Service_4_List_1"),
+      listTwo: t("Service_4_List_2"),
+      listThree: t("Service_4_List_3"),
+      listFour: t("Service_4_List_4"),
+      listFive: t("Service_4_List_5"),
+      button: t("Service_Request"),
     },
   ];
 
@@ -97,10 +99,16 @@ const Services = () => {
       {/* Conditionally render image and details based on index (even/odd) */}
       {index % 2 === 0 ? ( // Image on right for even divs
         <div className="reverse">
-          <div className="service-details ">
+          <div
+            className={`service-details ${
+              i18next.language == "ar" ? "service-details-ar " : ""
+            }`}
+          >
             <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <ul>
+            <p dir={`${i18next.language === "ar" ? "rtl" : "ltr"}`}>
+              {service.description}
+            </p>
+            <ul dir={`${i18next.language === "ar" ? "rtl" : "ltr"}`}>
               <li>{service.listOne}</li>
               <li>{service.listTwo}</li>
               <li>{service.listThree}</li>
@@ -109,7 +117,7 @@ const Services = () => {
             </ul>
             <div className="btn-div">
               <button onClick={handleWhatsAppClick}>
-                Service Request
+                {service.button}
                 <img src={arrow_white_icon} />
               </button>
               <img
@@ -132,10 +140,16 @@ const Services = () => {
         // Image on left for odd divs
         <>
           <img src={service.image} alt="image" className="services-img" />
-          <div className="service-details ">
+          <div
+            className={`service-details ${
+              i18next.language == "ar" ? "service-details-ar " : ""
+            }`}
+          >
             <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <ul>
+            <p dir={`${i18next.language === "ar" ? "rtl" : "ltr"}`}>
+              {service.description}
+            </p>
+            <ul dir={`${i18next.language === "ar" ? "rtl" : "ltr"}`}>
               <li>{service.listOne}</li>
               <li>{service.listTwo}</li>
               <li>{service.listThree}</li>
@@ -144,7 +158,7 @@ const Services = () => {
             </ul>
             <div className="btn-div" onClick={handleWhatsAppClick}>
               <button>
-                Service Request <img src={arrow_white_icon} />
+                {service.button} <img src={arrow_white_icon} />
               </button>
               <img
                 src={whatsapp_icon}

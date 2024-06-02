@@ -7,12 +7,16 @@ import fax_icon from "../../assets/icons8-fax-96.png";
 import email_icon from "../../assets/icons8-email-94.png";
 import location_icon from "../../assets/icons8-location-96.png";
 import white_arrow_icon from "../../assets/icons8-arrow-24.png";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
 const Contact = () => {
   const [result, setResult] = React.useState("");
+  const { t } = useTranslation();
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult(`${t("formSubmissionsetResult")}`);
     const formData = new FormData(event.target);
 
     formData.append("access_key", "d11c9de9-d10d-413e-be61-f3c117563615");
@@ -25,7 +29,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult(`${t("formSubmissionResult")}`);
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -33,63 +37,64 @@ const Contact = () => {
     }
   };
   return (
-    <div className="contact">
+    <div
+      className="contact"
+      dir={`${i18next.language === "ar" ? "rtl" : "ltr"}`}
+    >
       <div className="contact-col">
         <h3>
-          Send us a message <img src={message_icon} alt="message icon" />
+          {t("contactUsTitle")} <img src={message_icon} alt="message icon" />
         </h3>
-        <p>
-          Contact us today for a free consultation. Our expert team is happy to
-          assist you and answer all your questions.
-        </p>
+        <p>{t("contactUsDescription")}</p>
 
         <ul>
           <li>
-            <img src={email_icon} alt /> info@digitalgroup.com
+            <img src={email_icon} alt /> {t("emailAddress")}
           </li>
           <li>
-            <img src={tel_icon} alt /> 02-6227176
+            <img src={tel_icon} alt />
+            {t("phoneNumberLandline")}
           </li>
           <li>
-            <img src={mob_icon} alt /> 050-8003356
+            <img src={mob_icon} alt /> {t("phoneNumberMobile")}
           </li>
           <li>
-            <img src={fax_icon} alt /> 02-555-8229
+            <img src={fax_icon} alt /> {t("faxNumber")}
           </li>
           <li>
             <img src={location_icon} alt />
-            Mazyad mall , tower 2 , 7th floor,
-            <br /> Muhamad Bin Zayd, ABU DHABI,
-            <br /> United Arab Emirates.
+            {t("addressLine1")}
+            <br /> {t("addressLine2")}
+            <br /> {t("addressLine3")}
           </li>
         </ul>
       </div>
       <div className="contact-col">
-        <form onSubmit={onSubmit}>
-          <label>Your Name</label>
+        <form
+          onSubmit={onSubmit}
+          dir={`${i18next.language === "ar" ? "rtl" : "ltr"}`}
+        >
+          <label>{t("yourNamePlaceholder")}</label>
           <input
             type="text"
             name="name"
-            placeholder="Enter your name"
+            placeholder={`${i18next.language === "ar" ? "الأسم" : "your name"}`}
             required
           />
-          <label>Phone Number</label>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Enter your mobile number"
-            required
-          />
-          <label>Write your Message</label>
+          <label>{t("phoneNumberPlaceholder")}</label>
+          <input type="tel" name="phone" placeholder="+971" required />
+          <label>{t("writeYourMessagePlaceholder")}</label>
           <textarea
             name="message"
             id=""
             rows={6}
-            placeholder="Enter your Message"
+            placeholder={`${
+              i18next.language === "ar" ? "أدخل رسالتك" : "your Message"
+            }`}
             required
           ></textarea>
           <button type="submit" className="btn dark-btn">
-            Submit Now <img src={white_arrow_icon} />
+            {t("submitButtonLabel")} <img src={white_arrow_icon} />
           </button>
         </form>
         <span>{result}</span>

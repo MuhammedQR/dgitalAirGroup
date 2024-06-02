@@ -9,6 +9,7 @@ import Title from "./components/Title/Title";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import BtnI18n from "./components/translateBtn/BtnI18n";
 
 const App = () => {
   return (

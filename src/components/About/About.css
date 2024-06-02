@@ -11,6 +11,9 @@
 }
 
 .about-right {
+  background-color: #ffffff80;
+  padding: 10px;
+  border-radius: 10px;
   flex-basis: 56%;
 }
 
@@ -21,7 +24,7 @@
   color: #e0952f;
 }
 .about-right h2 {
-  font-size: 20px;
+  font-size: 23px;
   margin: 10px 0;
   max-width: 600px;
   color: rgb(133, 74, 74);
@@ -35,7 +38,7 @@
 
 .about p {
   color: rgb(133, 74, 74);
-  font-size: 13px;
+  /* font-size: 16px; */
   line-height: 1.3;
 }
 

@@ -1,17 +1,19 @@
 import "./Hero.css";
 import arrow_icon from "../../assets/arrow.png";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
+import BtnI18n from "../translateBtn/BtnI18n";
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <div className="hero container">
+
+      <div className="hero container">  
+      
         <div className="hero-text">
-          <h1>DIGITAL AIR CONDITION</h1>
-          <h3>MAINTENANCE OF AC</h3>
-          <p>
-            Enjoy comfort and refreshment with one of the best air conditioning
-            companies in the United Arab Emirates
-          </p>
+          <h1>{t("Hero_Title")}</h1>
+          <h3>{t("Hero_Subtitle")}</h3>
+          <p>{t("Hero_Description")}</p>
 
           <Link
             className="btn"
@@ -20,7 +22,7 @@ const Hero = () => {
             offset={-280}
             duration={500}
           >
-            Explore more <img src={arrow_icon} className="arrow" />
+            {t("Explore_More")} <img src={arrow_icon} className="arrow" />
           </Link>
         </div>
       </div>

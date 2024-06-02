@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import "./Counter.css";
+import { useTranslation } from "react-i18next";
 
 const Counter = () => {
   const [counterOn, setCounterOn] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +39,7 @@ const Counter = () => {
             isScrolled ? "animate__slideInDown" : ""
           }`}
         >
-          <h1>Residential Projects</h1>
+          <h1>{t("residentialProjects")}</h1>
           <h2 className="count">
             {counterOn && (
               <CountUp start={0} end={199} duration={3} delay={false} />
@@ -50,7 +52,7 @@ const Counter = () => {
             isScrolled ? "animate__slideInDown" : ""
           }`}
         >
-          <h1>Public Projects</h1>
+          <h1>{t("publicProjects")}</h1>
           <h2 className="count">
             {counterOn && (
               <CountUp start={0} end={50} duration={3} delay={false} />
@@ -63,7 +65,7 @@ const Counter = () => {
             isScrolled ? "animate__slideInDown" : ""
           }`}
         >
-          <h1>Government Projects</h1>
+          <h1>{t("governmentProjects")}</h1>
           <h2 className="count">
             {counterOn && (
               <CountUp start={0} end={30} duration={3} delay={false} />
