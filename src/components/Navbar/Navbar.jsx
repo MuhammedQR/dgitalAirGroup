@@ -27,7 +27,7 @@ const Navbar = () => {
         <img src={logo} className="logo" />
         <ul
           className={`
-      ${mobileMenu ? "hide-mobile-menu " : ""}
+      ${mobileMenu ? "" : "hide-mobile-menu"}
       ${i18next.language === "ar" ? "nav-ul-ar" : ""}
       `}
         >

@@ -18,7 +18,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "ar", // Default language (can be changed dynamically)
+    lng: "en", // Default language (can be changed dynamically)
     interpolation: {
       escapeValue: false, // React already safes from XSS
     },
