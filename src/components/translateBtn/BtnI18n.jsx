@@ -13,7 +13,7 @@ const BtnI18n = () => {
       <select onChange={changeLanguage}>
         <option className="option" value="en">English</option>
         <option className="option" value="ar">عربي</option>
-      </select>
+      </select> 
     </div>
   );
 };

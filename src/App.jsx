@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div>
       <Helmet>
-        <title>Digital Air Condition - Top AC Servicesr</title>
+        <title>Digital Air Condition - Top AC Services</title>
         <meta
           name="description"
           content="Comprehensive Cooling and Air Conditioning Solutions in Abu Dhabi - Digital Air Condition"
@@ -28,8 +28,6 @@ const App = () => {
         <meta name="author" content="Digital Air Condition" />
         <meta charset="UTF-8" />
         <meta name="language" content="en-US" />
-        <meta name="language" content="ar-SA" />
-
         {/* Social Media Optimization */}
         <meta
           property="og:title"
