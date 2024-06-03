@@ -9,9 +9,10 @@ import Title from "./components/Title/Title";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
-import BtnI18n from "./components/translateBtn/BtnI18n";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Helmet>
@@ -46,24 +47,22 @@ const App = () => {
       </Helmet>
       <Navbar />
       <Hero />
-      <Title
-        subTitle={"Our Services"}
-        Title={
-          "We offer a comprehensive suite of services, encompassing everything from design and installation to maintenance and repair"
-        }
-      />
+      <Title subTitle={t("servicesSubTitle")} Title={t("servicesTitle")} />
       <Services />
       <Title
-        subTitle={"Our achievements"}
-        Title={"17 years of success in ventilation solutions"}
+        subTitle={t("SubTitleAchievements")}
+        Title={t("AchievementsTitle")}
       />
       <Counter />
       <div className="container">
         <About />
 
-        <Title subTitle={"TESTIMONIALS"} Title={"What Customers Says"} />
+        <Title
+          subTitle={t("SubTitleTestimonials")}
+          Title={t("TestimonialsTitle")}
+        />
         <Testimonials />
-        <Title subTitle={"Contact Us"} Title={"Get in touch"} />
+        <Title subTitle={t("ContactSubTitle")} Title={t("ContactTitle")} />
         <Contact />
 
         <Footer />

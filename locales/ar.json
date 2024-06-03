@@ -80,7 +80,16 @@
                     "writeYourMessagePlaceholder": "اكتب رسالتك", 
                     "submitButtonLabel": "إرسال الآن",  
                     "formSubmissionResult": "تم إرسال النموذج بنجاح",  
-                    "formSubmissionsetResult": "....جاري الأرسال" 
+                    "formSubmissionsetResult": "....جاري الأرسال" ,
+
+                    "servicesSubTitle": "خدماتنا",
+                    "servicesTitle": "شركة التكييف الرقمي  - أفضل خدمات تكييف الهواء",
+                    "SubTitleAchievements": "أنجازاتنا",
+                    "AchievementsTitle": "17 عامًا من النجاح في حلول التهوية",
+                    "SubTitleTestimonials": "أراء العملاء",
+                    "TestimonialsTitle": "ماذا قال عملائنا",
+                    "ContactSubTitle": "أتصل بنا",
+                    "ContactTitle": "تواصل معنا الأن"
 
                   
                   
