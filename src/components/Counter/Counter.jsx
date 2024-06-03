@@ -33,7 +33,10 @@ const Counter = () => {
       onExit={() => setCounterOn(false)}
       className="counter-dev"
     >
-      <div className="conters">
+      <div
+        className="conters"
+       
+      >
         <div
           className={` counter animate__animated ${
             isScrolled ? "animate__slideInDown" : ""

@@ -4,7 +4,6 @@ import serviceImgeOne from "../../assets/AirConditionService.jpeg";
 import serviceImgeTwo from "../../assets/DesignService.jpeg";
 import serviceImgeThree from "../../assets/MechanicalService.jpeg";
 import serviceImgeFour from "../../assets/ProjectService.jpg";
-import whatsapp_icon from "../../assets/icons8-whatsapp-94.png";
 import arrow_white_icon from "../../assets/icons8-arrow-24.png";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -120,12 +119,6 @@ const Services = () => {
                 {service.button}
                 <img src={arrow_white_icon} />
               </button>
-              <img
-                src={whatsapp_icon}
-                alt="whatsappIcon"
-                className="whatsapp-btn"
-                onClick={handleWhatsAppClick}
-              />
             </div>
           </div>
 
@@ -160,12 +153,6 @@ const Services = () => {
               <button>
                 {service.button} <img src={arrow_white_icon} />
               </button>
-              <img
-                src={whatsapp_icon}
-                alt="whatsappIcon"
-                className="whatsapp-btn"
-                onClick={handleWhatsAppClick}
-              />
             </div>
           </div>
         </>
