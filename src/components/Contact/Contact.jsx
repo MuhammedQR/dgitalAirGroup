@@ -46,7 +46,6 @@ const Contact = () => {
           {t("contactUsTitle")} <img src={message_icon} alt="message icon" />
         </h3>
         <p>{t("contactUsDescription")}</p>
-
         <ul>
           <li>
             <img src={email_icon} alt /> {t("emailAddress")}
@@ -59,7 +58,8 @@ const Contact = () => {
             <img src={mob_icon} alt /> {t("phoneNumberMobile")}
           </li>
           <li>
-            <img src={fax_icon} alt /> {t("faxNumber")}
+            <img src={fax_icon} alt />
+            {t("faxNumber")}
           </li>
           <li>
             <img src={location_icon} alt />

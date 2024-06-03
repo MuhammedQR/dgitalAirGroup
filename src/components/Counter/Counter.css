@@ -1,7 +1,6 @@
 .counter-dev {
+  width: 100%   ;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .counter-dev p {
@@ -44,25 +43,16 @@
 
 @media (max-width: 650px) {
   .counter {
-    width: 250px;
+    min-width: 320px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 1px -5px 17px 7px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   .counter h1 {
-    font-size: 19px;
+    font-size: 16px;
   }
-  .counter-dev > h1 {
-    font-size: 22px;
-    color: #e0952f;
-  }
-  .counter-dev p {
-    font-size: 17px;
-    color: rgb(114, 88, 88);
-    text-align: center;
-    padding: 3px;
-    line-height: 1.5;
-  }
+  
+
 }
 

@@ -44,6 +44,7 @@
 
 @media (max-width: 888px) {
   .about {
+    width: 100%;
     flex-direction: column;
   }
   .about-left {
@@ -54,4 +55,13 @@
   .about-right {
     flex-basis: 100%;
   }
+  .about-right h2 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .about p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
 }
