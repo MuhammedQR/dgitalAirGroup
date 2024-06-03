@@ -41,7 +41,7 @@
 }
 
 .hero-text .btn .arrow {
-  margin: 2px 0 0 4px;
+  margin: 1px 0 0 4px;
   width: 20px;
 }
 
@@ -49,9 +49,6 @@
   .hero-text h1 {
     font-size: 40px;
     text-align: center;
-  }
-  .hero-text .btn {
-    max-width: 150px;
   }
 }
 @media (max-width: 650px) {
