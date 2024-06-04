@@ -45,7 +45,7 @@ const Counter = () => {
           <h1>{t("residentialProjects")}</h1>
           <h2 className="count">
             {counterOn && (
-              <CountUp start={0} end={199} duration={3} delay={false} />
+              <CountUp start={0} end={1000} duration={3} delay={false} />
             )}
             +
           </h2>
@@ -58,7 +58,7 @@ const Counter = () => {
           <h1>{t("publicProjects")}</h1>
           <h2 className="count">
             {counterOn && (
-              <CountUp start={0} end={50} duration={3} delay={false} />
+              <CountUp start={0} end={64} duration={3} delay={false} />
             )}
             +
           </h2>
@@ -71,7 +71,7 @@ const Counter = () => {
           <h1>{t("governmentProjects")}</h1>
           <h2 className="count">
             {counterOn && (
-              <CountUp start={0} end={30} duration={3} delay={false} />
+              <CountUp start={0} end={42} duration={3} delay={false} />
             )}
             +
           </h2>

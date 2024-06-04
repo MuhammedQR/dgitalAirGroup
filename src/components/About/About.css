@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  background-color: #ffffff80;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .about-left {
@@ -11,9 +14,6 @@
 }
 
 .about-right {
-  background-color: #ffffff80;
-  padding: 10px;
-  border-radius: 10px;
   flex-basis: 56%;
 }
 
@@ -49,7 +49,7 @@
   }
   .about-left {
     flex-basis: 100%;
-    margin: 20px;
+    margin-top: 20px;
     order: 2;
   }
   .about-right {
@@ -63,5 +63,4 @@
     font-size: 14px;
     line-height: 1.2;
   }
-  
 }
