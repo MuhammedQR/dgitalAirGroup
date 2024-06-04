@@ -52,19 +52,25 @@
   }
 }
 @media (max-width: 650px) {
-  .hero-text h1 {
-    font-size: 16px;
-    max-width: 400px;
-    margin: auto;
+  .hero-text {
     text-align: center;
   }
+  .hero-text h1 {
+    font-size: 20px;
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+  }
+
   .hero-text h3 {
-    font-size: 14px;
+    font-size: 16px;
     max-width: 400;
     margin: auto;
+    width: 100%;
   }
   .hero-text p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 15px auto 30px;
+    width: 100%;
   }
 }
